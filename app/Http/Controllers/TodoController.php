@@ -13,7 +13,7 @@ class TodoController extends Controller
      */
     public function index()
     {
-        //
+        
         $todos = Todo::paginate(5);
         $totalTodos = Todo::count();
 
